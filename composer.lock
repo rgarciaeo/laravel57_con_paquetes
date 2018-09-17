@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f914f30f8607b7eb6f2ee164daedd40",
+    "content-hash": "c1607b6a2586efcb6e20b7f7c98c6758",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -529,6 +529,126 @@
                 "trusted proxy"
             ],
             "time": "2018-02-07T20:20:57+00:00"
+        },
+        {
+            "name": "galahad/bootforms",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/glhd/bootforms.git",
+                "reference": "66647896fdab6d577d7544e89910ce68e90e6cc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/glhd/bootforms/zipball/66647896fdab6d577d7544e89910ce68e90e6cc6",
+                "reference": "66647896fdab6d577d7544e89910ce68e90e6cc6",
+                "shasum": ""
+            },
+            "require": {
+                "galahad/forms": "^1.1",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "6.3.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Galahad\\BootForms\\BootFormsServiceProvider"
+                    ],
+                    "aliases": {
+                        "BootForm": "Galahad\\BootForms\\Facades\\BootForm"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Galahad\\BootForms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                },
+                {
+                    "name": "Chris Morrell",
+                    "homepage": "http://www.cmorrell.com"
+                }
+            ],
+            "description": "Form builder with Bootstrap-specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
+            "keywords": [
+                "BootForm",
+                "Forms",
+                "bootforms",
+                "bootstrap",
+                "laravel"
+            ],
+            "time": "2018-09-05T20:07:15+00:00"
+        },
+        {
+            "name": "galahad/forms",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/glhd/forms.git",
+                "reference": "92d8650e03de59191f40e048f117759de32bbaf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/glhd/forms/zipball/92d8650e03de59191f40e048f117759de32bbaf8",
+                "reference": "92d8650e03de59191f40e048f117759de32bbaf8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.5.*|5.6.*|5.7.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "6.3.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Galahad\\Forms\\FormsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Galahad\\Forms\\Facades\\Form"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Galahad\\Forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                },
+                {
+                    "name": "Chris Morrell",
+                    "homepage": "http://www.cmorrell.com"
+                }
+            ],
+            "description": "Base for builder",
+            "time": "2018-09-05T20:09:24+00:00"
         },
         {
             "name": "httpoz/roles",
