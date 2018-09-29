@@ -17,16 +17,22 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 {
 	Auth::routes();
 
-	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-	Route::get('/', [
+ 	Route::get('/', [
 		'as' => 'home',
 		'uses' => 'HomeController@index'
 	]);	
 
+	/* Back office */
+	Route::group(['middleware' => ['web']], function () {
+
+		Route::get('admin', [
+			'as' => 'admin.index',
+			'uses' => 'Admin/AdminController@index'
+		]);	
+
+	});
+
+
+
 });
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+ 
